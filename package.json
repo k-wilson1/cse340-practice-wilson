@@ -1,9 +1,14 @@
 {
-    "name": "cse340-practice-[lastname]",
-    "dependencies": {},
-    "devDependencies": {},
+    "name": "cse340-practice-wilson",
+    "dependencies": {
+        "express": "^5.2.1"
+    },
     "type": "module",
     "scripts": {
+        "dev": "nodemon --env-file=.env server.js",
         "start": "node server.js"
+    },
+    "devDependencies": {
+        "nodemon": "^3.1.11"
     }
 }
