@@ -1,6 +1,7 @@
 {
     "name": "cse340-practice-wilson",
     "dependencies": {
+        "-": "^0.0.1",
         "ejs": "^3.1.10",
         "express": "^5.2.1"
     },
@@ -10,6 +11,7 @@
         "start": "node server.js"
     },
     "devDependencies": {
-        "nodemon": "^3.1.11"
+        "nodemon": "^3.1.11",
+        "ws": "^8.19.0"
     }
 }
