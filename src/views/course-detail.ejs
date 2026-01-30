@@ -1,5 +1,6 @@
 <%- include('partials/header') %>
 <% if (queryParams.sort) { %>
+    
     <div class="sort-message">
         <p>Currently sorted by: <%= queryParams.sort %></p>
     </div>
@@ -9,6 +10,7 @@
     </div>
 <% } %>
 <link rel="stylesheet" href="/css/catalog.css">
+<link rel="stylesheet" href="/css/main.css">
 <main>
     <div class="course-header">
         <h1><%= course.title %></h1>
