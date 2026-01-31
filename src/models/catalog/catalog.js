@@ -119,4 +119,4 @@ const getCoursesByDepartment = () => {
     return departments;
 };
 
-export { getAllCourses, getCourseById, getSortedSections, getCoursesByDepartment };
+export{ getAllCourses, getCourseById, getSortedSections, getCoursesByDepartment };
