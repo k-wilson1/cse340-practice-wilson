@@ -76,9 +76,6 @@ const faculty = {
 
 const getFacultyByName = (facultyName) => {
     return faculty[facultyName] || null;
-}
-const getFacultyById = (id) => {
-    return faculty[id] || null;
 };
 
 const getSortedFaculty = (sortBy) => {
@@ -110,4 +107,4 @@ const getSortedFaculty = (sortBy) => {
     return facultyArray;
 };
 
-export { getFacultyByName, getFacultyById, getSortedFaculty };
+export { getFacultyByName, getSortedFaculty };

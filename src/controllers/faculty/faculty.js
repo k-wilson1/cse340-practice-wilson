@@ -13,7 +13,7 @@ const facultyListPage = (req, res) => {
 };
 
 const facultyDetailPage = (req, res, next) => {
-    const facultyName = req.params.id;
+    const facultyName = req.params.name;
     const facultyMember = getFacultyByName(facultyName);
 
     // If faculty member doesn't exist, create 404 error
@@ -25,8 +25,10 @@ const facultyDetailPage = (req, res, next) => {
 
     
     res.render('faculty/detail', {
-        title: `${facultyMember.id} - ${facultyMember.title}`,
+        title: `${facultyMember.name} -  ${facultyMember.title}`,
         faculty: facultyMember
     });
-}
-export { facultyListPage, facultyDetailPage };
+};
+
+
+export { facultyListPage, facultyDetailPage};
