@@ -3,7 +3,8 @@
     "dependencies": {
         "-": "^0.0.1",
         "ejs": "^3.1.10",
-        "express": "^5.2.1"
+        "express": "^5.2.1",
+        "pg": "^8.18.0"
     },
     "type": "module",
     "scripts": {
