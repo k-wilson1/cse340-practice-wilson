@@ -1,4 +1,4 @@
-import { getFacultyByName, getSortedFaculty } from "../../models/faculty/faculty.js";
+import {  getSortedFaculty } from "../../models/faculty/faculty.js";
 
 // Route handler for individual faculty detail pages
 const facultyListPage = (req, res) => {
@@ -14,7 +14,7 @@ const facultyListPage = (req, res) => {
 
 const facultyDetailPage = (req, res, next) => {
     const facultyName = req.params.name;
-    const facultyMember = getFacultyByName(facultyName);
+    const facultyMember = getFacultyByID(facultyName);
 
     // If faculty member doesn't exist, create 404 error
     if (!facultyMember) {
